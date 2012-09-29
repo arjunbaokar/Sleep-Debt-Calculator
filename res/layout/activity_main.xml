@@ -4,11 +4,31 @@
     android:layout_height="match_parent" >
 
     <TextView
+        android:id="@+id/mainQuote"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/hello_world"
-        tools:context=".MainActivity" />
+        android:layout_marginTop="14dp"
+        android:text="Sleep is for the Weak"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/startSleep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainQuote"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="I&apos;m Going to Sleep!" />
+
+    <Button
+        android:id="@+id/endSleep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startSleep"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:text="Good Morning World!" />
 
 </RelativeLayout>
